@@ -22,14 +22,25 @@ Additional I build a small control loop for the Volume Set function. It is now p
 
   ```yaml
 media_player:
-  - platform: pioneer_vsx529
-    host: 192.168.0.XXX
-    port: 8102
-    name: Pioneer VSX-529
-    sources:
-      'TV': '05'
-      'Webradio': '38'
-      'Alexa': '04'
+- platform: pioneer_vsx529
+  host: 192.168.1.34
+  port: 8102
+  name: Pioneer VSX-529
+  sources:
+    'CD' : '01'
+    'FM tuner' : '02'
+    'DVD' : '04'
+    'TV' : '05'
+    'SAT/CBL' : '06'
+    'No Device' : '17'
+    'HDMI' : '19'
+    'BD' : '25'
+    'ADP' : '33'
+    'Net Radio' : '38'
+    'M Server' : '44'
+    'Favorite' : '45'
+    'MHL' : '48'
+    'Game' : '49'
   ```
   
   This verison needs Home Assistant v.0.110 or higher! For the previous version plese see the coresponding branch.
